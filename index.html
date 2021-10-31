@@ -1,1 +1,55 @@
-Hello World
+<html>
+    <head>
+        <title>졸업작품 - mj</title>
+        <meta charset="UTF-8" />
+        <!-- 6. 여러분의 CSS 실력을 뽐내주세요 -->
+        <link rel="stylesheet" href="src/style.css" />
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="inner">
+                <!-- geolocation -->
+                <div id="weather" class="mt50">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- 실시간 시계 -->
+                <div id="area-clock"></div>
+
+                <!-- 로컬 스토리지를 사용한 로그인 -->
+                <form id="login-form" class="hidden">
+                    <input type="text" placeholder="What is your name?" />
+                    <input type="submit" value="Log In" />
+                    <p><strong>Log in to use the to-do list</strong></p>
+                </form>
+                <div id="greeting" class="hidden">
+                    <span></span>
+                </div>
+
+
+                <!-- 로컬 스토리지를 사용한 투두리스트 -->
+                <div id="area-todo" class="hidden mt50">
+                    <h2>TODO LIST</h2>
+                    <form id="todo-form">
+                        <input type="text" placeholder="Write To Do and Press" />
+                    </form>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. 실시간 시계 -->
+        <script src="src/js/clock.js"></script>
+        <!-- 2. 로컬 스토리지를 사용한 로그인 -->
+        <script src="src/js/login.js"></script>
+        <!-- 3. 로컬 스토리지를 사용한 투두리스트 -->
+        <script src="src/js/todo.js"></script>
+        <!-- 4. 랜덤 배경 이미지 -->
+        <script src="src/js/background.js"></script>
+        <!-- 5. 날씨와 위치 (geolocation) -->
+        <script src="src/js/geolocation.js"></script>
+    </body>
+</html>
+
